@@ -1,0 +1,24 @@
+Aplicação de microservições rodando na AWS em instancias EC2 conectados a security Groups e VPC permitindo acesso SSH somente a um par de chaves
+Utilizando Spring, Java DB para bando do microserviço Escola e mongoDB para o micro serviço de estudante, utilização de registry para acompanhamento e monitoração dos microserviçoes e criação d eum api GTW para comunicação entres as APIs
+
+Exemlos de utilização via PostMan
+Post escola --> http://18.230.69.252:8080/school/add
+{
+    "schoolName": "Fundação Santo André2",
+    "location": "Santo André",
+    "principalName": "Otavio Cabral Leme"
+}
+
+Get escola --> http://18.230.69.252:8080/school
+Get escola by ID --> http://18.230.69.252:8080/school/1
+
+Post estudante --> http://18.230.69.252:8080/student/add
+{
+    "name": "Guilherme Cassiano",
+    "age": 21,
+    "gender": "Male",
+    "schoolId": 1
+}
+
+Get estudante --> http://18.230.69.252:8080/student
+Get estudante by ID --> http://18.230.69.252:8080/student/6732b4b9f9122b6fdbc48e3b
